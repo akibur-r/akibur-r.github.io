@@ -4,7 +4,7 @@
 - 🌱 I’m currently building projects.
 - 💻 I'm currently doing competitive programming.
 - 📧 Reach me at **akibur.pciu@gmail.com**
-- 👨‍💻 Visit my portfolio <a href="https://akibur-r.github.io" style="text-decoration: none;">here</a>. 
+- 👨‍💻 Visit my portfolio <a href="https://akibur-r.github.io" target="_blank" style="text-decoration: none; color: #3971cc;">here</a>. 
 
 <h3 align="left">Connect with me on</h3>
 <p align="left">
