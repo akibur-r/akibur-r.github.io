@@ -317,7 +317,7 @@ body {
 
 #about > .box-container > .box > .skill-list > li > a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--footer);
 }
 
 #blog {
@@ -357,6 +357,18 @@ body {
 
 #blog > .text > .second-line {
   color: var(--orange);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  bottom: 0;
+  height: 5vh;
+  background-color: var(--footer-bg);
+  color: var(--footer);
+  font-family: "Nunito Sans";
 }
 
 /* --------------------------------- */
