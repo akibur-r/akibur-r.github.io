@@ -188,6 +188,7 @@ body {
   margin-top: 1%;
   padding: 0.5rem 1rem;
 
+  text-align: center;
   text-transform: uppercase;
   border: 0.2rem solid var(--orange);
   border-radius: 0.2rem;
@@ -273,16 +274,21 @@ body {
   transition-duration: 500ms;
 }
 
-#about > .box-container > .box:hover > i {
+#about > .box-container > .box:hover {
+  box-shadow: 0.1px 0.1px 4px 0.1px var(--orange);
+}
+
+#about > .box-container > .box:hover > iconify-icon {
   color: var(--orange-light);
 }
 
-#about > .box-container > .box > i {
+#about > .box-container > .box > iconify-icon {
   flex: 3;
   display: flex;
   align-items: center;
-  margin-top: 2rem;
   color: var(--orange);
+  margin-top: 2%;
+  font-size: 700%;
 }
 #about > .box-container > .box > .title {
   flex: 1;
@@ -295,7 +301,7 @@ body {
 }
 
 #about > .box-container > .box:hover > .title {
-  font-size: 155%;
+  font-size: 151%;
 }
 
 #about > .box-container > .box > .skill-list {
