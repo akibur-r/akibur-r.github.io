@@ -113,29 +113,13 @@ body {
   flex: 1;
 }
 
-#nav-bar > .social > a > img {
-  height: auto;
-  width: 1.5rem;
-}
-
-#nav-bar > .social > a > .codeforces-l {
-  display: none;
-}
-
-#nav-bar > .social > a:hover .codeforces-l {
-  display: block;
-}
-
-#nav-bar > .social > a:hover .codeforces {
-  display: none;
-}
-
-#nav-bar > .social > a > i {
-  width: auto;
+#nav-bar > .social > a > iconify-icon {
+  font-size: 1.5rem;
   color: var(--orange);
+  transition-duration: 200ms;
 }
 
-#nav-bar > .social > a:hover > i {
+#nav-bar > .social > a:hover > iconify-icon {
   color: var(--white);
 }
 
@@ -395,7 +379,7 @@ body {
   background-color: var(--orange);
 }
 
-.back-to-top:hover > a > i {
+.back-to-top:hover > a > iconify-icon {
   color: var(--white);
 }
 
@@ -403,6 +387,6 @@ body {
   text-decoration: none;
 }
 
-.back-to-top > a > i {
+.back-to-top > a > iconify-icon {
   color: var(--orange);
 }
