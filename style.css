@@ -370,8 +370,10 @@ body {
   bottom: 0;
   height: 5vh;
   background-color: var(--footer-bg);
-  color: var(--footer);
-  font-family: "Nunito Sans";
+  color: var(--white);
+  font-family: Arial, "Nunito Sans";
+
+  opacity: 0.8;
 }
 
 /* --------------------------------- */
@@ -401,4 +403,26 @@ body {
 
 .back-to-top > a > iconify-icon {
   color: var(--orange);
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange-dark);
+  border-radius: 1vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
 }
