@@ -7,7 +7,7 @@
   --orange-dark: #e46512;
 
   --black: #222831;
-  --black-light: #383e46;
+  --black-light: #2a3038;
   --black-dark: #1f242c;
 
   --white: #f0f0f0;
@@ -20,7 +20,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Tahoma, Calibri;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 520;
   scroll-behavior: smooth;
 }
@@ -254,6 +254,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: flex-start;
   gap: 1%;
   padding: 5%;
@@ -272,6 +273,7 @@ body {
 
   box-sizing: border-box;
   width: 100%;
+  min-width: 16rem;
   aspect-ratio: 2/2.5;
   background-color: #1f242c;
   color: var(--white);
@@ -330,6 +332,220 @@ body {
 #resume {
   display: flex;
   flex-wrap: wrap;
+  gap: 2%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 4%;
+}
+
+#resume > .heading {
+  flex: 1;
+  /* background-color: #e46512; */
+  width: 100%;
+
+  display: flex;
+}
+
+#resume > .heading > .title {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+#resume > .heading > .title > .name {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  color: var(--orange);
+}
+
+#resume > .heading > .title > .tagline {
+  color: var(--white);
+  opacity: 0.9;
+}
+
+#resume > .heading > .button {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#resume > .heading > .button > button {
+  padding: 3%;
+  background-color: transparent;
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 0.2rem;
+
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+#resume > .heading > .button > button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#resume > .section {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+
+  width: 100%;
+}
+
+#resume > .section > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  color: var(--white);
+
+  /* background-color: #1a1d22; */
+}
+
+#resume > .section > div > .heading {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+#resume > .section > div > .heading > hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 90%;
+  border-color: var(--orange);
+  opacity: 0.2;
+}
+
+#resume > .section > div > .content {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* background-color: #e46512; */
+}
+
+#resume > .section > div > .content > .skill {
+  flex: 1;
+}
+
+#resume > .section > div > .content > .skill > .heading {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-bottom: 1%;
+  font-size: 100%;
+}
+
+#resume > .section > div > .content > .skill > .heading > .percentage {
+  margin: auto;
+  font-size: 90%;
+}
+
+#resume > .section > div > .content > .skill > .bar {
+  display: inherit;
+}
+
+#resume > .section > div > .content > .skill > .bar > .color {
+  border-color: var(--orange);
+  border-width: 0.1rem;
+}
+
+#resume > .section > div > .content > .skill > .bar > .ninety {
+  width: 90%;
+}
+
+#resume > .section > div > .content > .skill > .bar > .fourty {
+  width: 40%;
+}
+
+#resume > .section > div > .content > .skill > .bar > .sixty {
+  width: 60%;
+}
+
+#resume > .section > div > .content > .main {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+
+  margin-bottom: 2%;
+}
+
+#resume > .section > div > .content > .main > .title {
+  transition-duration: 200ms;
+}
+
+#resume > .section > div > .content > .main > .title > a {
+  text-decoration: none;
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 120%;
+}
+
+#resume > .section > div > .content > .main > .title > a:hover {
+  text-decoration: underline;
+}
+
+#resume > .section > div > .content > .main > .year {
+  font-size: 90%;
+}
+
+#resume > .section > div > .content > .tools {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+}
+
+#resume > .section > div > .content > .tools > .tool {
+  padding: 2%;
+  background-color: var(--black-light);
+  font-size: 80%;
+  letter-spacing: 0.1rem;
+
+  border-radius: 0.4rem;
+}
+
+#resume > .section > div > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+#resume > .section > div > .content > .name {
+  font-size: 120%;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+#resume > .section > .interests > .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-basis: content;
+}
+
+#resume > .section > .interests > .content > .hobby {
+  font-size: 90%;
+  text-align: center;
+  padding: 1%;
+  background-color: var(--black-light);
+  border-radius: 0.4rem;
+}
+
+#contact {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -337,12 +553,13 @@ body {
   height: 100vh;
 }
 
-#resume > .icon {
+#contact > .icon {
   flex-shrink: 1;
   color: var(--orange);
+  font-size: 10rem;
 }
 
-#resume > .text {
+#contact > .text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -351,14 +568,14 @@ body {
   margin-top: 2%;
 }
 
-#resume > .text > span {
+#contact > .text > span {
   flex-shrink: 1;
   font-size: 5rem;
   font-family: "Josefin Sans";
   color: var(--white);
 }
 
-#resume > .text > .second-line {
+#contact > .text > .second-line {
   color: var(--orange);
 }
 
@@ -381,28 +598,19 @@ body {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  padding: 0.4rem;
+  padding: 0.3rem 0.4rem 0.2rem 0.4rem;
+
+  text-decoration: none;
+  color: var(--white);
+
   border: 2px solid var(--orange);
   border-radius: 0.4rem;
 
   transition-duration: 100ms;
-  transition-property: all;
 }
 
 .back-to-top:hover {
   background-color: var(--orange);
-}
-
-.back-to-top:hover > a > iconify-icon {
-  color: var(--white);
-}
-
-.back-to-top > a {
-  text-decoration: none;
-}
-
-.back-to-top > a > iconify-icon {
-  color: var(--orange);
 }
 
 /* Scroll bar */
