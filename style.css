@@ -527,18 +527,20 @@ body {
   color: var(--orange);
 }
 
-#resume > .section > .interests > .content {
+#resume > .section > div > .skills-and-interests {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 1%;
   flex-basis: content;
 }
 
-#resume > .section > .interests > .content > .hobby {
+#resume > .section > div > .skills-and-interests > .hobby {
   font-size: 90%;
   text-align: center;
+  letter-spacing: 0.05rem;
   padding: 1%;
   background-color: var(--black-light);
   border-radius: 0.4rem;
