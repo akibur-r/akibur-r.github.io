@@ -555,29 +555,75 @@ body {
   height: 100vh;
 }
 
-#contact > .icon {
-  flex-shrink: 1;
-  color: var(--orange);
-  font-size: 10rem;
+#contact > .text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  color: var(--white);
 }
 
-#contact > .text {
+#contact > .text > .first-line > span {
+  font-size: 500%;
+  font-weight: 600;
+}
+
+#contact > .text > .first-line > .first-text {
+}
+
+#contact > .text > .first-line > .second-text {
+  color: var(--orange);
+}
+
+#contact > .text > .second-line {
+  font-size: 150%;
+}
+
+#contact > .content {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+#contact > .content > div {
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  margin-top: 2%;
 }
 
-#contact > .text > span {
-  flex-shrink: 1;
-  font-size: 5rem;
-  font-family: "Josefin Sans";
+#contact > .content > div > iconify-icon {
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+
+#contact > .content > div > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   color: var(--white);
+  padding: 2%;
+  line-height: 150%;
+  font-size: 1.5rem;
 }
 
-#contact > .text > .second-line {
+#contact > .content > div > span > a {
+  text-decoration: none;
+  color: var(--orange-dark);
+
+  transition-duration: 200ms;
+}
+
+#contact > .content > div > span > a:hover {
   color: var(--orange);
 }
 
